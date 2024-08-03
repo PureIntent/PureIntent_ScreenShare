@@ -3,5 +3,5 @@ $Response = (Invoke-WebRequest -UseBasicParsing -Uri "https://ip.cactive.co/api/
 Write-Host "Interface Alias: $Interface_Alias"
 Write-Host "VPN Detected: $($Response.detection_vpn)"
 Write-Host "Server (Non-Residential Connection) Detected: $($Response.detection_server)"
-Write-Host "Mobile Connection Detected: $($Response.detection_vpn)"
+Write-Host "Mobile Connection Detected: $($Response.detection_mobile)"
 Write-Host "Timezone: $($Response.time_zone)"
